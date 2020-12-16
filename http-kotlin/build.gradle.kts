@@ -1,6 +1,6 @@
 plugins {
-   kotlin("jvm") version "1.3.21"
-   id("com.palantir.graal") version "0.3.0-6-g0b828af"
+   kotlin("jvm") version "1.4.21"
+   id("com.palantir.graal") version "0.7.2"
 }
 
 repositories {
@@ -12,7 +12,7 @@ dependencies {
 }
 
 graal {
-   graalVersion("1.0.0-rc14")
+   graalVersion("20.3.0")
    mainClass("HttpServerKt")
    outputName("httpserv-kt")
    option("--enable-http")

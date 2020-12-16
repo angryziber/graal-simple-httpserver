@@ -2,7 +2,7 @@
 plugins {
     groovy
     `java-library`
-    id("com.palantir.graal") version "0.3.0-6-g0b828af"
+    id("com.palantir.graal") version "0.7.2"
 }
 
 repositories {
@@ -34,7 +34,7 @@ tasks {
 }
 
 graal {
-    graalVersion("1.0.0-rc14")
+    graalVersion("20.3.0")
     mainClass("HttpServerGroovy")
     outputName("httpserv-groovy")
     option("--enable-http")
